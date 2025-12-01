@@ -19,7 +19,7 @@ Route::middleware('auth:api')->group(function () {
     Route::get('/farmers', [FarmerController::class, 'index']);
     Route::post('/farmers', [FarmerController::class, 'store']);
     Route::get('/farmers/{id}', [FarmerController::class, 'show']);
-    Route::post('/farmers/{id}', [FarmerController::class, 'update']); // POST for form-data with files
+    Route::post('/farmers/{id}', [FarmerController::class, 'update']);
     Route::delete('/farmers/{id}', [FarmerController::class, 'destroy']);
 
     // Admin routes
